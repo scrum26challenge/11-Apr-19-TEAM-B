@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Sprint Name: <input type="text" id="sprint"><br>
+planning: <input type="text" id="plan"><br>
+
+code: <input type="text" id="code"><br>
+Review <input type="text" id="review"><br>
+Retrospective: <input type="text" id="res"><br>
+
+
+
+
+
+<button onclick="myFunction()">Startup </button>
+
+<p id="demo"></p>
+<p id="coundown"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+
+  var a = document.getElementById("sprint").value;
+    var b = document.getElementById("plan").value;
+
+  var c = document.getElementById("code").value;
+
+  var d = document.getElementById("review").value;
+  var e = document.getElementById("res").value;
+
+
+
+  //document.getElementById("demo").innerHTML = a;
+  
+   document.getElementById("coundown").innerHTML = b;
+  //document.getElementById("demo1").innerHTML = c;
+  //document.getElementById("demo2").innerHTML = d;
+  //document.getElementById("demo").innerHTML = e;
+  var ss="planning "
+ 
+var timeleft = b; var downloadTimer = setInterval(function(){   document.getElementById("coundown").innerHTML = ss+" "+timeleft + " seconds remaining";   timeleft -= 1;   if(timeleft <= 0){     clearInterval(downloadTimer);     document.getElementById("countdown").innerHTML = "Finished"   } }, 1000);
+}
+
+</script> 
+
+</body>
+</html>
+
