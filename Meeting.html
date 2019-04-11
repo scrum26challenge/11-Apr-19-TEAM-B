@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Spirnt Name: <input type="text" id="sprint"><br>
+planning: <input type="text" id="plan"><br>
+
+code: <input type="text" id="code"><br>
+Review <input type="text" id="review"><br>
+Retrospective: <input type="text" id="res"><br>
+
+
+
+
+
+<button onclick="myFunction()">Startup </button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+
+  var a = document.getElementById("sprint").value;
+    var b = document.getElementById("plan").value;
+
+  var c = document.getElementById("code").value;
+
+  var d = document.getElementById("review").value;
+  var e = document.getElementById("res").value;
+
+
+
+  document.getElementById("demo").innerHTML = a;
+  
+   document.getElementById("coundown").innerHTML = b;
+  document.getElementById("demo").innerHTML = c;
+  document.getElementById("demo").innerHTML = d;
+  document.getElementById("demo").innerHTML = e;
+ 
+
+}
+
+</script> 
+
+</body>
+</html>
